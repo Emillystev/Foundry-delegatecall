@@ -11,7 +11,8 @@ contract Contract2 {
 
     function setVars2(address _contract, uint256 _num) public payable {
         // Contract2's storage is set, Contract1 is not modified.
-        // (bool success, bytes memory data) = _contract.delegatecall(
+        // (bool success, bytes memory data) = _contract.delegatecall
+
         (bool success,) = _contract.delegatecall(abi.encodeWithSignature("setVars1(uint256)", _num));
         if (!success) {
             revert("delegatecall failed");

@@ -7,6 +7,7 @@ pragma solidity ^0.8.19;
 // NOTE: Deploy this contract first
 contract Contract1 {
     // NOTE: storage layout must be the same as contract Contract2
+
     uint256 public num;
     address public sender;
     uint256 public value;
