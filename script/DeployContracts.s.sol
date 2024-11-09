@@ -15,4 +15,3 @@ contract DeployContracts is Script {
         return (contract1, contract2);
     }
 }
-
